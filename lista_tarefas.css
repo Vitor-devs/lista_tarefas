@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    background: rgba(228, 225, 225, 0.671);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: auto auto;
+    align-items: center;
+}
+
+input {
+    height: 120px;
+    width: 80%;
+    font-size: 2rem;
+    padding-left: 3%;
+}
+
+button.add {
+    width: 20%;
+    height: 120px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bolder;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: auto auto;
+    padding-top: 40px;
+}
+
+
+.item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 80px;
+    width: 100%;
+    margin-bottom: 1.5%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.199);
+}
+
+.item.clicado {
+    background: rgb(87, 243, 66);
+
+}
+
+.item.clicado .item-nome {
+    text-decoration: line-through;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+.item-icone {
+    flex: 20%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.item-nome {
+    flex: 55%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.item-botao {
+    flex: 25%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.delete {
+    background: red;
+    color: white;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.mdi-check-circle-outline {
+    color: rgb(6, 175, 6);
+}

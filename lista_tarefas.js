@@ -34,29 +34,29 @@ function addTarefa() {
 }
 
 
-function deletar(id){
+function deletar(id) {
     var tarefa = document.getElementById(id);
     tarefa.remove();
 
 }
 
-function marcarTarefa(id){
+function marcarTarefa(id) {
     var item = document.getElementById(id);
     var classe = item.getAttribute('class');
 
-    if (classe == 'item'){
+    if (classe == 'item') {
         item.classList.add('clicado');
 
-        var icone = document.getElementById('icone_'+id)
+        var icone = document.getElementById('icone_' + id)
         icone.classList.remove('mdi-circle-outline');
         icone.classList.add('mdi-check-circle');
 
         item.parentNode.appendChild(item)
 
-    }  else{
+    } else {
         item.classList.remove('clicado');
 
-        var icone = document.getElementById('icone_'+id)
+        var icone = document.getElementById('icone_' + id)
         icone.classList.remove('mdi-check-circle');
         icone.classList.add('mdi-circle-outline');
     }
@@ -64,9 +64,9 @@ function marcarTarefa(id){
 
 
 
-input.addEventListener("keyup", function(event){
+input.addEventListener("keyup", function (event) {
     //Se teclou enter (13)
-    if(event.key == "Enter"){
+    if (event.key == "Enter") {
         event.preventDefault();
         btnAdd.click();
     }
